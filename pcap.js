@@ -8,13 +8,16 @@ var util, IOWatcher,
     HTTPParser = process.binding('http_parser').HTTPParser,
     url        = require('url');
 
-if (process.versions && process.versions.node && process.versions.node.split('.')[1] >= 3) {
-    util = require("util");
-    IOWatcher  = process.binding('io_watcher').IOWatcher;
-} else {
-    util = require('util');
-    IOWatcher = process.IOWatcher;
-}
+// if (process.versions && process.versions.node && process.versions.node.split('.')[1] >= 3) {
+//     util = require("util");
+//     IOWatcher  = process.binding('io_watcher').IOWatcher;
+// } else {
+//     util = require('util');
+//     IOWatcher = process.IOWatcher;
+// }
+
+IOWatcher = require('./io_watcher').IOWatcher;
+util = require("util");
 
 function Pcap() {
     this.opened = false;
