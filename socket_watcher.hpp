@@ -20,9 +20,7 @@
 //     However, libuv didn't bump the version when uv_poll_t was introduced.
 #if NODE_VERSION_AT_LEAST(0, 7, 9)
 # define NODE_MDNS_USE_SOCKET_WATCHER
-# warning Using SocketWatcher
 #else
-# warning Using IOWatcher
 #endif
 
 namespace node_pcap {

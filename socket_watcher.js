@@ -22,11 +22,8 @@ function product(type) {
 
 try {
   var pm = __dirname+"/"+product(buildtype);
-  console.log(pm);
   var mod = require(pm);
-  console.log(mod);
   module.exports = mod;
-  console.log("loaded");
 } catch (ex) {
   console.log("nogo",ex);
   if (! ex.code) {

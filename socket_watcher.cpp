@@ -4,7 +4,6 @@
 
 
 #ifdef NODE_MDNS_USE_SOCKET_WATCHER
-#warning cpp
 #include "socket_watcher.hpp"
 
 #include <string.h> // needed for memset() with node v0.7.9 on Mac OS

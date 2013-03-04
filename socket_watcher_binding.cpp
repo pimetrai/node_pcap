@@ -4,8 +4,7 @@
 #define NODE_MDNS_USE_SOCKET_WATCHER
 
 #ifdef NODE_MDNS_USE_SOCKET_WATCHER
-#warning USINGSW
-# include "socket_watcher.hpp"
+#include "socket_watcher.hpp"
 #endif
 
 using namespace v8;
@@ -25,8 +24,6 @@ init(Handle<Object> target) {
     HandleScope scope;
 
 #ifdef NODE_MDNS_USE_SOCKET_WATCHER
-#warning Initialize
-
     SocketWatcher::Initialize( target );
 #endif
 
