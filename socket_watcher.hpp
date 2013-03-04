@@ -1,3 +1,6 @@
+// From https://github.com/agnat/node_mdns/commit/ef8978753197bbd2c5fc86df1159bee3e767b96a
+// Original code from TobyEalden
+
 #ifndef NODE_MDNS_SOCKET_WATCHER_INCLUDED
 #define NODE_MDNS_SOCKET_WATCHER_INCLUDED
 
